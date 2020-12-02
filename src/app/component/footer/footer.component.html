@@ -1,0 +1,15 @@
+<footer class="homepage-footer-container" fxLayout="column" fxLayout.md="row" fxLayout.sm="row" fxLayout.xs="row">
+  <div class="linkrow" fxFlex="60" fxFlex.md="55" fxFlex.sm="55" fxFlex.xs="55" fxLayout="row" fxLayout.md="column"
+    fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="start center" fxLayout>
+    <ng-container *ngFor="let key of objectKeys(footerURLs); let i = index">
+      <div class="footer-link">       
+        <a title ="{{ 'I18N.FOOTER.' + (key | slice :0:-4) | translate }}" 
+          (click)="openURL(footerURLs[key])">{{ "I18N.FOOTER." + (key | slice :0:-4) | translate }}</a>        
+      </div>
+    </ng-container>
+  </div>
+  <div class="imagerow" fxFlex="40" fxFlex.md="45" fxFlex.sm="45" fxFlex.xs="45" fxLayout="row" fxLayout.lt-md="column"
+    fxLayoutAlign="end center">
+   <h5 class="copy">Workbook</h5>
+  </div>
+</footer>

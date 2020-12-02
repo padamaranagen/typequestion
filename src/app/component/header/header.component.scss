@@ -1,0 +1,23 @@
+header {
+
+    &.container-header {
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+      border-top: 5px solid #f0525f;
+    }
+    
+    div.wrapper {
+  
+      display: flex;
+      justify-content: space-between;
+  
+      div.logo {
+        display: flex;
+        justify-content: flex-start; 
+       
+      }
+      sh3.title {
+        font-family: sourceSansProRegular, Microsoft YaHei;
+      }
+     
+    }
+  }

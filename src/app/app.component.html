@@ -1,14 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}
-  </h1>
+<div class="container" fxLayout="column">
+  <div class="main-container" fxFlex="1 0 auto" fxLayout="column">
+    <app-header></app-header>
+    <div class="body-container" fxFlex="1 0 auto" fxLayout="row">
+      <app-side-nav-bar class="sidenav"></app-side-nav-bar>
+      <div class="tabcontent" fxFlex="1 0 auto">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
 </div>
-
-
-
-<app-searchbar></app-searchbar>
-<app-dashboard></app-dashboard>
-<app-questionbank></app-questionbank>
-
-<router-outlet></router-outlet>

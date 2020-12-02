@@ -1,0 +1,13 @@
+
+{
+    "I18N": {
+        "FOOTER": {
+        "home": "Home",
+        "angular5": "Angular5",
+        "angular7": "Angular7",
+        "angular9": "Angular9",
+        "angular11": "Angular11",
+        "help":"Help"
+        }
+    }
+}
